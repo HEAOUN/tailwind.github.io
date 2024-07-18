@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="w-100 flex flex-col md:flex-row justify-between items-center bg-red-200 px-20 shadow-sm">
+        <a href="#" class="w-[140px] h-[140px] md:w-[80px] md:h-[80px]"><img src="https://png.pngtree.com/png-clipart/20221224/original/pngtree-shopefood-logo-png-image_8801636.png" alt=""></a>
+        <div class="menu hidden md:block">
+            <ul class="flex items-center flex-col md:flex-row text-xl space-x-0 md:space-x-5 space-y-5 md:space-y-0">
+                <li><a href="#" class="hover:text-red-500">Home</a></li>
+                <li><a href="#" class="hover:text-red-500">Products</a></li>
+                <li><a href="#" class="hover:text-red-500">About Us</a></li>
+                <li><a href="#" class="hover:text-red-500">Contact Us</a></li>
+                <li><a href="#" class="hover:text-red-500">Cart</a></li>
+            </ul>
+        </div>
+        <div class="button text-xl space-x-0 md:space-x-5 space-y-5 md:space-y-0 font-bold items-center flex-col md:flex-row mt-10 md:mt-3 mb-5 text-gray-900 hidden md:flex">
+            <a href="#" class="hover:text-white transition-all bg-red-500 py-2 px-5 rounded-full">Login</a>
+            <a href="#" class="hover:text-white transition-all bg-green-500 py-2 px-5 rounded-full">Sign Up</a>
+        </div>
+        <div class="hamburger text-2xl block md:hidden translate-x-52 mb-5 cursor-pointer">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!-- end of nav-bar -->
+     <div class="search w-100 flex flex-col items-center mt-10">
+        <h1 class="text-4xl font-bold">Search Filter App</h1>
+        <div class="search-box mt-8 space-x-3">
+            <input type="text" placeholder="Search Restaurant" class="border border-gray-500 rounded-full p-5 md:px-28 py-3 text-md md:text-xl">
+            <button class="bg-red-500 rounded-full px-8 py-3 text-sm md:text-xl text-white hover:bg-gray-500">Search</button>
+        </div>
+     </div>
+     <!-- end of search -->
+     <div class="content w-[90%] mx-auto mt-16">
+        <h1 class="text-2xl">Available Items Order Now!</h1>
+        <div class="content-box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 gap-y-10 mt-10">
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+
+            <div class="box w-100 p-3 shadow-md shadow-black rounded-xl">
+                <a href="#"><img src="https://www.whiskaffair.com/wp-content/uploads/2020/07/Chicken-Biryani-2-3.jpg" alt="" class="w-full h-[230px] rounded-xl"></a>
+                <div class="title flex justify-evenly items-center mt-5">
+                <div class="title-left">
+                <h5 class="text-xl font-bold">Chicken Biryani</h5>
+                <p>Karachi Style Spicy Biryani</p>
+                </div>
+                <div class="title-right">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p class="mt-1 font-semibold">20$</p>
+                </div>
+                </div>
+                <div class="bottom mt-5 flex justify-between items-center p-3">
+                    <div class="text-red-500">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="bg-red-500 text-white px-5 py-3 rounded-xl"><a href="#">Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- script -->
+     <script src="script.js"></script>
+</body>
+</html>
